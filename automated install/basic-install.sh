@@ -1582,7 +1582,7 @@ update_package_cache() {
 # advise them to run a package update at soonest possible.
 notify_package_updates_available() {
     # Local, named variables
-    local str="Checking ${PKG_MANAGER} for upgraded packages"
+    local str="Checking ${PKG_MANAGER} for updatable packages"
     printf "\\n  %b %s..." "${INFO}" "${str}"
     # Store the list of packages in a variable
     updatesToInstall=$(eval "${PKG_COUNT}")
